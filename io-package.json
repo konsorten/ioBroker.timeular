@@ -1,0 +1,144 @@
+{
+    "common": {
+        "name": "timeular",
+        "version": "0.1.0",
+        "news": {
+            "0.1.0": {
+                "en": "news",
+                "de": "neues",
+                "ru": "новое"
+            },
+            "0.7.2": {
+                "en": "news",
+                "de": "neues",
+                "ru": "новое"
+            },
+            "0.7.1": {
+                "en": "news",
+                "de": "neues",
+                "ru": "новое"
+            },
+            "0.7.0": {
+                "en": "news",
+                "de": "neues",
+                "ru": "новое"
+            },
+            "0.6.0": {
+                "en": "news",
+                "de": "neues",
+                "ru": "новое"
+            }
+        },
+        "title": "Timeular tracking adapter",
+        "desc": {
+            "en": "Adapter to receive the current tracking vom timeular"
+        },
+        "authors": [
+            "Michael Müller @ marvin + konsorten <dev@konsorten.de>"
+        ],
+        "platform": "Javascript/Node.js",
+        "mode": "daemon",
+        "icon": "timeular.png",
+        "materialize": true,
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/konsorten/ioBroker.timeular/master/admin/timeular.png",
+        "keywords": [
+            "timeular"
+        ],
+        "readme": "https://github.com/konsorten/ioBroker.timeular/blob/master/README.md",
+        "loglevel": "info",
+        "type": "general",
+        "license": "MIT",
+        "messagebox": false
+    },
+    "native": {
+        "apiKey": "",
+        "apiSecret": "",
+        "updateInterval": 60
+    },
+    "instanceObjects": [
+        {
+            "_id": "connected",
+            "type": "state",
+            "common": {
+                "name": "Indicates if ioBroker is connected to the timeular API",
+                "type": "bool",
+                "read": true,
+                "write": false,
+                "role": "indicator.connected"
+            }
+        },
+        {
+            "_id": "error",
+            "type": "state",
+            "common": {
+                "name": "Error during connecting to the timeular API",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "role": "indicator.maintenance"
+            }
+        },
+        {
+            "_id": "tracking",
+            "type": "state",
+            "common": {
+                "name": "Indicates if timeular is currently tracking an activity",
+                "type": "bool",
+                "read": true,
+                "write": false
+            }
+        },
+        {
+            "_id": "currentTracking.startedAt",
+            "type": "state",
+            "common": {
+                "name": "Start time of the current activity",
+                "type": "string",
+                "read": true,
+                "write": false,
+                "role": "value.time"
+            }
+        },
+        {
+            "_id": "currentTracking.activity.id",
+            "type": "state",
+            "common": {
+                "name": "Current activity id",
+                "type": "number",
+                "read": true,
+                "write": false
+            }
+        },
+        {
+            "_id": "currentTracking.activity.name",
+            "type": "state",
+            "common": {
+                "name": "Current activity name",
+                "type": "string",
+                "read": true,
+                "write": false
+            }
+        },
+        {
+            "_id": "currentTracking.activity.color",
+            "type": "state",
+            "common": {
+                "name": "Current activity color",
+                "type": "string",
+                "read": true,
+                "write": false
+            }
+        },
+        {
+            "_id": "currentTracking.note.text",
+            "type": "state",
+            "common": {
+                "name": "Note for the current activity",
+                "type": "string",
+                "read": true,
+                "write": false
+            }
+        }
+    ]
+}

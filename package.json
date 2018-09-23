@@ -1,0 +1,40 @@
+{
+  "name": "ioBroker.timeular",
+  "version": "0.1.0",
+  "description": "timeular",
+  "author": "Michael Müller @ marvin + konsorten <dev@konsorten.de>",
+  "contributors": [
+    "Michael Müller @ marvin + konsorten <dev@konsorten.de>"
+  ],
+  "homepage": "https://github.com/konsorten/ioBroker.timeular",
+  "license": "MIT",
+  "keywords": [
+    "ioBroker",
+    "timeular",
+    "Smart Home",
+    "home automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konsorten/ioBroker.timeular.git"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "mocha": "^4.1.0",
+    "chai": "^4.1.2"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha --exit"
+  },
+  "bugs": {
+    "url": "https://github.com/konsorten/ioBroker.timeular/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
+}
