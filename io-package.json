@@ -7,26 +7,6 @@
                 "en": "news",
                 "de": "neues",
                 "ru": "новое"
-            },
-            "0.7.2": {
-                "en": "news",
-                "de": "neues",
-                "ru": "новое"
-            },
-            "0.7.1": {
-                "en": "news",
-                "de": "neues",
-                "ru": "новое"
-            },
-            "0.7.0": {
-                "en": "news",
-                "de": "neues",
-                "ru": "новое"
-            },
-            "0.6.0": {
-                "en": "news",
-                "de": "neues",
-                "ru": "новое"
             }
         },
         "title": "Timeular tracking adapter",
